@@ -13,6 +13,31 @@ Are you a fan of the fantastic Wizarding world of Harry Potter? This application
   4. Run `npm install` to install project dependencies
   5. Run `node server.js` OR `nodemon server.js` to start the local server and navigate to localhost:3000
 
+## 🎥 API Endpoints
+| Description | URL | Method | Required Properties for Request | 
+| ----------- | --- | ------ | ------------------------------- |
+| Home        | "http:localhost:3000" | GET | none |
+| Get all characters | "http:localhost:3000/api/v1/characters" | GET | none |
+| Get single character | "http:localhost:3000/api/v1/characters/:id" | GET | none |
+| Update entire character | "http:localhost:3000/api/v1/characters/:id" | PUT | ```json
+                {                     
+                name: <String>,
+                gender: <String>,
+                job: <String>,
+                house: <String>,
+                wand: <String>,
+                patronus: <String>,
+                species: <String>,
+                bloodStatus: <String>,
+                hairColor: <String>,
+                eyeColor: <String>,
+                loyalty: <String>,
+                skills: <String>,
+                birth: <String>,
+                death: <String> 
+                } 
+                ``` |
+
 ## 🎥 Technologies Used 
 ![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat) 
 ![Nodemon Badge](https://img.shields.io/badge/Nodemon-76D04B?logo=nodemon&logoColor=fff&style=flat)
